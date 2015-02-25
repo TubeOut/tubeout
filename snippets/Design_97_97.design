@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="60" y="40">
+<group id="-1">
+<ignore-screen-tolerance comment="false" x="71" y="65">
+<ACTOR eid="this" id="0"/>
+</ignore-screen-tolerance>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="59" y="123">
+<group id="-1">
+<actors-in-group comment="false" x="70" y="148">
+<group id="-1">
+<set-val-97-2 comment="false" x="81" y="181">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<actor-in-group comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+                        </set-val-97-2>
+<if comment="false" x="81" y="224">
+<group id="-1">
+<replace-list comment="false" x="92" y="269">
+<get-game-val-14 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-97-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</minus>
+<sqrt comment="false" id="2" x="0" y="0">
+<plus comment="false" id="0" x="0" y="0">
+<pow comment="false" id="0" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<getxc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getxc>
+<getxc comment="false" id="1" x="0" y="0">
+<actor-in-group comment="false" id="0" x="0" y="0"/>
+</getxc>
+</minus>
+<int id="1" val="2"/>
+</pow>
+<pow comment="false" id="1" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<getyc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getyc>
+<getyc comment="false" id="1" x="0" y="0">
+<actor-in-group comment="false" id="0" x="0" y="0"/>
+</getyc>
+</minus>
+<int id="1" val="2"/>
+</pow>
+</plus>
+</sqrt>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-11 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-97-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+<get-val-97-1 comment="false" id="1" x="0" y="0"/>
+</eq>
+</if>
+</group>
+<pick-group comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</pick-group>
+</actors-in-group>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="60" y="395">
+<group id="-1">
+<if comment="false" x="71" y="420">
+<group id="-1">
+<if comment="false" x="82" y="478">
+<group id="-1">
+<set-game-val-6 comment="false" x="93" y="561">
+<as-number comment="false" id="0" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-4 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-13 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+</set-game-val-6>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<or comment="false" id="0" x="0" y="0">
+<less comment="false" id="0" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-4 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-13 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+<get-game-val-6 comment="false" id="1" x="0" y="0"/>
+</less>
+<eq comment="false" id="1" x="0" y="0">
+<get-game-val-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</eq>
+</or>
+<eq comment="false" id="1" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+<get-game-val-12 comment="false" id="1" x="0" y="0"/>
+</eq>
+</and>
+</if>
+<replace-list comment="false" x="82" y="641">
+<get-game-val-11 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+<int id="2" val="0"/>
+</replace-list>
+<replace-list comment="false" x="82" y="684">
+<get-game-val-13 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+<plus comment="false" id="2" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-13 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+<int id="1" val="1"/>
+</plus>
+</replace-list>
+<if comment="false" x="82" y="742">
+<group id="-1">
+<add-list comment="false" x="93" y="780">
+<get-game-val-4 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</add-list>
+<set-game-val-5 comment="false" x="93" y="805">
+<get-game-val-2 comment="false" id="0" x="0" y="0"/>
+</set-game-val-5>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+<get-game-val-12 comment="false" id="1" x="0" y="0"/>
+</eq>
+</if>
+<else comment="false" x="82" y="842">
+<group id="-1">
+<if comment="false" x="93" y="862">
+<group id="-1">
+<if comment="false" x="104" y="892">
+<group id="-1">
+<replace-list comment="false" x="115" y="950">
+<get-game-val-22 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+<get-game-val-2 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-13 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+<as-number comment="false" id="1" x="0" y="0">
+<scene-get-attribute comment="false" id="0" x="0" y="0">
+<int id="0" val="Racing Control"/>
+<int id="1" val="TotalLaps"/>
+</scene-get-attribute>
+</as-number>
+</more>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<scene-get-attribute comment="false" id="0" x="0" y="0">
+<int id="0" val="Racing Control"/>
+<int id="1" val="Fadingout"/>
+</scene-get-attribute>
+<int id="1" val="0"/>
+</eq>
+</if>
+</group>
+</else>
+<actors-in-group comment="false" x="82" y="1029">
+<group id="-1">
+<shout comment="false" x="93" y="1062">
+<actor-in-group comment="false" id="0" x="0" y="0"/>
+<int id="1" val="recalc_distance"/>
+</shout>
+</group>
+<pick-group comment="false" id="0" x="0" y="0">
+<int id="0" val="4"/>
+</pick-group>
+</actors-in-group>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-97-1 comment="false" id="0" x="0" y="0"/>
+<as-number comment="false" id="1" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-11 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+</eq>
+</if>
+</group>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="1731" y="773">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4"/>
+<group id="5"/>
+<group id="6"/>
+<group id="7"/>
+<group id="8"/>
+<group id="9"/>
+<group id="10"/>
+<group id="11"/>
+<group id="12">
+<receive-message comment="false" x="860" y="11">
+<group id="-1">
+<actors-in-group comment="false" x="871" y="36">
+<group id="-1">
+<set-val-97-2 comment="false" x="882" y="69">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<actor-in-group comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+                        </set-val-97-2>
+<if comment="false" x="882" y="112">
+<group id="-1">
+<replace-list comment="false" x="893" y="157">
+<get-game-val-14 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-97-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</minus>
+<sqrt comment="false" id="2" x="0" y="0">
+<plus comment="false" id="0" x="0" y="0">
+<pow comment="false" id="0" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<getxc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getxc>
+<getxc comment="false" id="1" x="0" y="0">
+<actor-in-group comment="false" id="0" x="0" y="0"/>
+</getxc>
+</minus>
+<int id="1" val="2"/>
+</pow>
+<pow comment="false" id="1" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<getyc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getyc>
+<getyc comment="false" id="1" x="0" y="0">
+<actor-in-group comment="false" id="0" x="0" y="0"/>
+</getyc>
+</minus>
+<int id="1" val="2"/>
+</pow>
+</plus>
+</sqrt>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<get-item comment="false" id="0" x="0" y="0">
+<get-game-val-11 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-97-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</minus>
+</get-item>
+</as-number>
+<get-val-97-1 comment="false" id="1" x="0" y="0"/>
+</eq>
+</if>
+</group>
+<pick-group comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</pick-group>
+</actors-in-group>
+</group>
+<int id="0" val="recalc_distance"/>
+</receive-message>
+</group>
+<group id="-1">
+<plus comment="false" x="1159" y="801">
+<int id="0" val=""/>
+<int id="1" val="1"/>
+</plus>
+<plus comment="false" x="1356" y="582">
+<int id="0" val=""/>
+<int id="1" val=""/>
+</plus>
+<minus comment="false" x="924" y="953">
+<int id="0" val=""/>
+<int id="1" val="1"/>
+</minus>
+<eq comment="false" x="1003" y="807">
+<int id="0" val=""/>
+<int id="1" val=""/>
+</eq>
+<get-attribute comment="false" x="48" y="48">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+<minus comment="false" x="48" y="48">
+<as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Racecar Functionality"/>
+<int id="2" val="_PlayerNum"/>
+</get-attribute>
+</as-number>
+<int id="1" val="1"/>
+</minus>
+</group>
+</groups>

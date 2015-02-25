@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="108" extheight="704" extwidth="1664" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="1.0" height="640" id="19" name="Scena 19" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1600">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="255"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions>
+        <region b="64" g="64" h="238" id="0" name="Region 0" pts="4,0.0,0.0,0.0,238.0,47.0,238.0,47.0,0.0" r="64" type="box" w="47" x="1546" y="203"/>
+    </regions>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="131" name="Blocco 1" sx="1.0" sy="1.0" x="192" y="416" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="131" name="Blocco 2" sx="1.0" sy="1.0" x="192" y="384" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="131" name="Blocco 3" sx="1.0" sy="1.0" x="192" y="352" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="131" name="Blocco 4" sx="1.0" sy="1.0" x="192" y="288" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="131" name="Blocco 5" sx="1.0" sy="1.0" x="192" y="320" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="131" name="Blocco 6" sx="1.0" sy="1.0" x="192" y="256" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="131" name="Blocco 7" sx="1.0" sy="1.0" x="192" y="224" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="131" name="Blocco 8" sx="1.0" sy="1.0" x="192" y="192" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="131" name="Blocco 9" sx="1.0" sy="1.0" x="288" y="288" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="131" name="Blocco 10" sx="1.0" sy="1.0" x="480" y="352" z="0"/>
+        <actor a="0.0" aid="11" c="false" group="3" id="131" name="Blocco 11" sx="1.0" sy="1.0" x="512" y="320" z="0"/>
+        <actor a="0.0" aid="12" c="false" group="3" id="131" name="Blocco 12" sx="1.0" sy="1.0" x="448" y="320" z="0"/>
+        <actor a="0.0" aid="13" c="false" group="3" id="131" name="Blocco 13" sx="1.0" sy="1.0" x="352" y="352" z="0"/>
+        <actor a="0.0" aid="14" c="false" group="3" id="131" name="Blocco 14" sx="1.0" sy="1.0" x="352" y="384" z="0"/>
+        <actor a="0.0" aid="15" c="false" group="3" id="131" name="Blocco 15" sx="1.0" sy="1.0" x="384" y="320" z="0"/>
+        <actor a="0.0" aid="17" c="false" group="3" id="131" name="Blocco 17" sx="1.0" sy="1.0" x="800" y="352" z="0"/>
+        <actor a="0.0" aid="16" c="false" group="3" id="131" name="Blocco 16" sx="1.0" sy="1.0" x="416" y="352" z="0"/>
+        <actor a="0.0" aid="19" c="false" group="3" id="131" name="Blocco 19" sx="1.0" sy="1.0" x="608" y="224" z="0"/>
+        <actor a="0.0" aid="18" c="false" group="3" id="131" name="Blocco 18" sx="1.0" sy="1.0" x="800" y="320" z="0"/>
+        <actor a="0.0" aid="21" c="false" group="3" id="131" name="Blocco 21" sx="1.0" sy="1.0" x="576" y="288" z="0"/>
+        <actor a="0.0" aid="20" c="false" group="3" id="131" name="Blocco 20" sx="1.0" sy="1.0" x="608" y="256" z="0"/>
+        <actor a="0.0" aid="23" c="false" group="3" id="131" name="Blocco 23" sx="1.0" sy="1.0" x="608" y="320" z="0"/>
+        <actor a="0.0" aid="22" c="false" group="3" id="131" name="Blocco 22" sx="1.0" sy="1.0" x="384" y="384" z="0"/>
+        <actor a="0.0" aid="25" c="false" group="3" id="131" name="Blocco 25" sx="1.0" sy="1.0" x="736" y="288" z="0"/>
+        <actor a="0.0" aid="24" c="false" group="3" id="131" name="Blocco 24" sx="1.0" sy="1.0" x="768" y="256" z="0"/>
+        <actor a="0.0" aid="27" c="false" group="3" id="131" name="Blocco 27" sx="1.0" sy="1.0" x="416" y="320" z="0"/>
+        <actor a="0.0" aid="26" c="false" group="3" id="131" name="Blocco 26" sx="1.0" sy="1.0" x="672" y="288" z="0"/>
+        <actor a="0.0" aid="29" c="false" group="3" id="131" name="Blocco 29" sx="1.0" sy="1.0" x="608" y="320" z="0"/>
+        <actor a="0.0" aid="28" c="false" group="3" id="131" name="Blocco 28" sx="1.0" sy="1.0" x="384" y="288" z="0"/>
+        <actor a="0.0" aid="31" c="false" group="3" id="131" name="Blocco 31" sx="1.0" sy="1.0" x="448" y="256" z="0"/>
+        <actor a="0.0" aid="30" c="false" group="3" id="131" name="Blocco 30" sx="1.0" sy="1.0" x="608" y="320" z="0"/>
+        <actor a="0.0" aid="34" c="false" group="3" id="131" name="Blocco 34" sx="1.0" sy="1.0" x="512" y="384" z="0"/>
+        <actor a="0.0" aid="35" c="false" group="3" id="131" name="Blocco 35" sx="1.0" sy="1.0" x="480" y="384" z="0"/>
+        <actor a="0.0" aid="32" c="false" group="3" id="131" name="Blocco 32" sx="1.0" sy="1.0" x="576" y="320" z="0"/>
+        <actor a="0.0" aid="33" c="false" group="3" id="131" name="Blocco 33" sx="1.0" sy="1.0" x="576" y="352" z="0"/>
+        <actor a="0.0" aid="38" c="false" group="3" id="131" name="Blocco 38" sx="1.0" sy="1.0" x="384" y="320" z="0"/>
+        <actor a="0.0" aid="39" c="false" group="3" id="131" name="Blocco 39" sx="1.0" sy="1.0" x="480" y="256" z="0"/>
+        <actor a="0.0" aid="36" c="false" group="3" id="131" name="Blocco 36" sx="1.0" sy="1.0" x="544" y="288" z="0"/>
+        <actor a="0.0" aid="37" c="false" group="3" id="131" name="Blocco 37" sx="1.0" sy="1.0" x="448" y="256" z="0"/>
+        <actor a="0.0" aid="42" c="false" group="3" id="131" name="Blocco 42" sx="1.0" sy="1.0" x="640" y="288" z="0"/>
+        <actor a="0.0" aid="43" c="false" group="3" id="131" name="Blocco 43" sx="1.0" sy="1.0" x="800" y="320" z="0"/>
+        <actor a="0.0" aid="40" c="false" group="3" id="131" name="Blocco 40" sx="1.0" sy="1.0" x="480" y="256" z="0"/>
+        <actor a="0.0" aid="41" c="false" group="3" id="131" name="Blocco 41" sx="1.0" sy="1.0" x="544" y="224" z="0"/>
+        <actor a="0.0" aid="46" c="false" group="3" id="131" name="Blocco 46" sx="1.0" sy="1.0" x="832" y="384" z="0"/>
+        <actor a="0.0" aid="47" c="false" group="3" id="131" name="Blocco 47" sx="1.0" sy="1.0" x="736" y="352" z="0"/>
+        <actor a="0.0" aid="44" c="false" group="3" id="131" name="Blocco 44" sx="1.0" sy="1.0" x="832" y="320" z="0"/>
+        <actor a="0.0" aid="45" c="false" group="3" id="131" name="Blocco 45" sx="1.0" sy="1.0" x="896" y="288" z="0"/>
+        <actor a="0.0" aid="51" c="false" group="3" id="131" name="Blocco 51" sx="1.0" sy="1.0" x="896" y="320" z="0"/>
+        <actor a="0.0" aid="50" c="false" group="3" id="131" name="Blocco 50" sx="1.0" sy="1.0" x="832" y="320" z="0"/>
+        <actor a="0.0" aid="49" c="false" group="3" id="131" name="Blocco 49" sx="1.0" sy="1.0" x="672" y="352" z="0"/>
+        <actor a="0.0" aid="48" c="false" group="3" id="131" name="Blocco 48" sx="1.0" sy="1.0" x="672" y="352" z="0"/>
+        <actor a="0.0" aid="55" c="false" group="3" id="131" name="Blocco 55" sx="1.0" sy="1.0" x="1152" y="288" z="0"/>
+        <actor a="0.0" aid="54" c="false" group="3" id="131" name="Blocco 54" sx="1.0" sy="1.0" x="1088" y="288" z="0"/>
+        <actor a="0.0" aid="53" c="false" group="3" id="131" name="Blocco 53" sx="1.0" sy="1.0" x="1024" y="288" z="0"/>
+        <actor a="0.0" aid="52" c="false" group="3" id="131" name="Blocco 52" sx="1.0" sy="1.0" x="960" y="288" z="0"/>
+        <actor a="0.0" aid="59" c="false" group="3" id="131" name="Blocco 59" sx="1.0" sy="1.0" x="992" y="352" z="0"/>
+        <actor a="0.0" aid="58" c="false" group="3" id="131" name="Blocco 58" sx="1.0" sy="1.0" x="1024" y="320" z="0"/>
+        <actor a="0.0" aid="57" c="false" group="3" id="131" name="Blocco 57" sx="1.0" sy="1.0" x="1056" y="256" z="0"/>
+        <actor a="0.0" aid="56" c="false" group="3" id="131" name="Blocco 56" sx="1.0" sy="1.0" x="1120" y="256" z="0"/>
+        <actor a="0.0" aid="63" c="false" group="3" id="131" name="Blocco 63" sx="1.0" sy="1.0" x="832" y="256" z="0"/>
+        <actor a="0.0" aid="62" c="false" group="3" id="131" name="Blocco 62" sx="1.0" sy="1.0" x="800" y="288" z="0"/>
+        <actor a="0.0" aid="61" c="false" group="3" id="131" name="Blocco 61" sx="1.0" sy="1.0" x="960" y="416" z="0"/>
+        <actor a="0.0" aid="60" c="false" group="3" id="131" name="Blocco 60" sx="1.0" sy="1.0" x="992" y="384" z="0"/>
+        <actor a="0.0" aid="71" c="false" group="0" id="116" name="Stick 71" sx="1.0" sy="1.0" x="128" y="320" z="0"/>
+        <actor a="0.0" aid="64" c="false" group="3" id="131" name="Blocco 64" sx="1.0" sy="1.0" x="672" y="320" z="0"/>
+        <actor a="0.0" aid="65" c="false" group="3" id="131" name="Blocco 65" sx="1.0" sy="1.0" x="576" y="384" z="0"/>
+        <actor a="0.0" aid="76" c="false" group="3" id="142" name="Copy of Sentry 76" sx="1.0" sy="1.0" x="512" y="352" z="0"/>
+        <actor a="0.0" aid="77" c="false" group="3" id="142" name="Copy of Sentry 77" sx="1.0" sy="1.0" x="576" y="256" z="0"/>
+        <actor a="0.0" aid="72" c="false" group="3" id="142" name="Copy of Sentry 72" sx="1.0" sy="1.0" x="736" y="320" z="0"/>
+        <actor a="0.0" aid="73" c="false" group="3" id="142" name="Copy of Sentry 73" sx="1.0" sy="1.0" x="640" y="320" z="0"/>
+        <actor a="0.0" aid="74" c="false" group="3" id="142" name="Copy of Sentry 74" sx="1.0" sy="1.0" x="608" y="288" z="0"/>
+        <actor a="0.0" aid="75" c="false" group="3" id="142" name="Copy of Sentry 75" sx="1.0" sy="1.0" x="544" y="320" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="38">
+            <prop id="1" list="0" val="71"/>
+            <prop id="2" list="0" val="1"/>
+            <prop id="3" list="0" val="1"/>
+        </s>
+        <s enabled="true" id="42">
+            <prop id="5" list="0" val="false"/>
+            <prop id="6" list="0" val="-1"/>
+            <prop id="7" list="0" val="5"/>
+            <prop id="8" list="0" val="100"/>
+            <prop id="10" list="0" val="GRAVITY: 1.0!"/>
+            <prop id="11" list="0" val="0.0"/>
+            <prop id="12" list="0" val="false"/>
+            <prop id="13" list="0" val="100"/>
+            <prop id="14" list="0" val="0,0,0,255"/>
+            <prop id="15" list="0" val="0,0,0,255"/>
+            <prop id="17" list="0" val="0.0"/>
+            <prop id="16" list="0" val="0.0"/>
+            <prop id="19" list="0" val="Up"/>
+            <prop id="18" list="0" val="0"/>
+        </s>
+        <s enabled="true" id="40">
+            <prop id="1" list="0" val="0"/>
+            <prop id="2" list="0" val="22"/>
+            <prop id="4" list="0" val="71"/>
+            <prop id="5" list="0" val="1"/>
+            <prop id="6" list="0" val="1"/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1152.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="256.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="704.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="768.0" y="448.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1344.0" y="128.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1408.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="640.0" y="448.0"/>
+        <p pts="4,32.0,64.0,0.0,32.0,32.0,0.0,64.0,32.0" x="0.0" y="256.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="640.0" y="128.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1024.0" y="128.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1536.0" y="128.0"/>
+        <p pts="4,0.0,32.0,32.0,0.0,64.0,32.0,32.0,64.0" x="768.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="320.0" y="448.0"/>
+        <p pts="4,32.0,64.0,0.0,32.0,32.0,0.0,64.0,32.0" x="448.0" y="128.0"/>
+        <p pts="4,32.0,64.0,0.0,32.0,32.0,0.0,64.0,32.0" x="256.0" y="128.0"/>
+        <p pts="4,32.0,64.0,0.0,32.0,32.0,0.0,64.0,32.0" x="192.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="832.0" y="448.0"/>
+        <p pts="4,0.0,32.0,32.0,0.0,64.0,32.0,32.0,64.0" x="576.0" y="128.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="384.0" y="128.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1088.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="448.0" y="448.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1280.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="64.0" y="448.0"/>
+        <p pts="4,0.0,32.0,32.0,0.0,64.0,32.0,32.0,64.0" x="0.0" y="384.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="192.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1088.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1344.0" y="448.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1216.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="704.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="896.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="960.0" y="448.0"/>
+        <p pts="4,32.0,64.0,0.0,32.0,32.0,0.0,64.0,32.0" x="320.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="0.0" y="192.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1472.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="384.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="128.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="0.0" y="448.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="0.0" y="128.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="64.0" y="128.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="0.0" y="320.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="576.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1152.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1408.0" y="448.0"/>
+        <p pts="4,0.0,32.0,32.0,0.0,64.0,32.0,32.0,64.0" x="512.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1280.0" y="448.0"/>
+        <p pts="4,32.0,64.0,0.0,32.0,32.0,0.0,64.0,32.0" x="128.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1024.0" y="448.0"/>
+        <p pts="4,0.0,32.0,32.0,0.0,64.0,32.0,32.0,64.0" x="832.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="960.0" y="128.0"/>
+        <p pts="4,32.0,0.0,64.0,32.0,32.0,64.0,0.0,32.0" x="1472.0" y="128.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1216.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="512.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="1536.0" y="448.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="896.0" y="128.0"/>
+    </terrain>
+</scene>

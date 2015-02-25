@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="Inputs: ----------------------"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="60">
+                    <int id="0" val="&amp;quot;On Ground?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;On Ground&amp;quot; Behavior (required)"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="80">
+                    <int id="0" val="&amp;quot;Facing Right?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;Walking&amp;quot; Behavior (required)"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="100">
+                    <int id="0" val="Outputs: ---------------------"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="120">
+                    <int id="0" val="&amp;quot;Is Jumping?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute"/>
+                </comment-short>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="If we&amp;#039;re on the ground, we&amp;#039;re not jumping"/>
+                </comment-short>
+                <if comment="false" x="26" y="60">
+                    <group eventID="-1" id="-1">
+                        <actor-set-prop comment="false" x="37" y="98">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Is Jumping?"/>
+                            <false comment="false" id="2" x="0" y="0"/>
+                        </actor-set-prop>
+                        <if comment="false" x="37" y="130">
+                            <group eventID="-1" id="-1">
+                                <set-val-50-2 comment="false" x="48" y="155">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-50-2>
+                            </group>
+                            <get-val-50-1 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <as-boolean comment="false" id="0" x="0" y="0">
+                        <actor-get-prop comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="On Ground?"/>
+                        </actor-get-prop>
+                    </as-boolean>
+                </if>
+                <comment-short comment="false" x="26" y="204">
+                    <int id="0" val="Check for the jump key press, but also allow a bit of leeway for smoother jumping"/>
+                </comment-short>
+                <if comment="false" x="26" y="224">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="262">
+                            <group eventID="-1" id="-1">
+                                <dolater comment="false" x="48" y="305">
+                                    <group eventID="-1" id="-1">
+                                        <if comment="false" x="59" y="332">
+                                            <group eventID="-1" id="-1">
+                                                <if comment="false" x="70" y="365">
+                                                    <group eventID="-1" id="-1">
+                                                        <set-val-50-1 comment="false" x="81" y="408">
+                                                            <false comment="false" id="0" x="0" y="0"/>
+                                                        </set-val-50-1>
+                                                    </group>
+                                                    <not comment="false" id="0" x="0" y="0">
+                                                        <as-boolean comment="false" id="0" x="0" y="0">
+                                                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                                <int id="1" val="On Ground?"/>
+                                                            </actor-get-prop>
+                                                        </as-boolean>
+                                                    </not>
+                                                </if>
+                                            </group>
+                                            <isalive comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                            </isalive>
+                                        </if>
+                                    </group>
+                                    <int id="0" val="0.15"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <as-boolean comment="false" id="0" x="0" y="0">
+                                    <actor-get-prop comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="On Ground?"/>
+                                    </actor-get-prop>
+                                </as-boolean>
+                            </not>
+                        </if>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <get-val-50-3 comment="false" id="1" x="0" y="0"/>
+                    </keystate>
+                </if>
+                <comment-short comment="false" x="26" y="493">
+                    <int id="0" val="Detect the release of the jump key"/>
+                </comment-short>
+                <if comment="false" x="26" y="513">
+                    <group eventID="-1" id="-1">
+                        <set-val-50-1 comment="false" x="37" y="561">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-50-1>
+                        <comment-short comment="false" x="37" y="586">
+                            <int id="0" val="If we&amp;#039;re still in the middle of jumping, slow down our upward ascent"/>
+                        </comment-short>
+                        <if comment="false" x="37" y="606">
+                            <group eventID="-1" id="-1">
+                                <set-dxy comment="false" x="48" y="649">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <times comment="false" id="2" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-dxy>
+                                        <get-val-50-18 comment="false" id="1" x="0" y="0"/>
+                                    </times>
+                                </set-dxy>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <as-boolean comment="false" id="0" x="0" y="0">
+                                    <actor-get-prop comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="Is Jumping?"/>
+                                    </actor-get-prop>
+                                </as-boolean>
+                                <less comment="false" id="1" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-xy>
+                                    <get-val-50-17 comment="false" id="1" x="0" y="0"/>
+                                </less>
+                            </and>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-50-1 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <not comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-50-3 comment="false" id="1" x="0" y="0"/>
+                            </keystate>
+                        </not>
+                    </and>
+                </if>
+                <comment-short comment="false" x="26" y="718">
+                    <int id="0" val="Detect the jump key press, and initiate the jump"/>
+                </comment-short>
+                <if comment="false" x="26" y="738">
+                    <group eventID="-1" id="-1">
+                        <play-sound4 comment="false" x="37" y="791">
+                            <int id="0" val="0"/>
+                            <SOUND eid="var" id="1" vid="19"/>
+                        </play-sound4>
+                        <set-val-50-15 comment="false" x="37" y="818">
+                            <int id="0" val="0"/>
+                        </set-val-50-15>
+                        <set-dxy comment="false" x="37" y="838">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <get-val-50-20 comment="false" id="0" x="0" y="0"/>
+                            </neg>
+                        </set-dxy>
+                        <set-val-50-2 comment="false" x="37" y="875">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-50-2>
+                        <set-val-50-1 comment="false" x="37" y="900">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-50-1>
+                        <comment-short comment="false" x="37" y="925">
+                            <int id="0" val="Add a small delay before setting the jumping flag, since another collision can occur before the Actor"/>
+                        </comment-short>
+                        <comment-short comment="false" x="37" y="945">
+                            <int id="0" val="gets off the ground, and this would just reset the flag to FALSE."/>
+                        </comment-short>
+                        <dolater comment="false" x="37" y="965">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="992">
+                                    <group eventID="-1" id="-1">
+                                        <actor-set-prop comment="false" x="59" y="1025">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="Is Jumping?"/>
+                                            <true comment="false" id="2" x="0" y="0"/>
+                                        </actor-set-prop>
+                                    </group>
+                                    <isalive comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                    </isalive>
+                                </if>
+                            </group>
+                            <int id="0" val="0.075"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                        <stop comment="false" x="37" y="1081"/>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <keystate comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <get-val-50-3 comment="false" id="1" x="0" y="0"/>
+                        </keystate>
+                        <and comment="false" id="1" x="0" y="0">
+                            <get-val-50-2 comment="false" id="0" x="0" y="0"/>
+                            <and comment="false" id="1" x="0" y="0">
+                                <get-val-50-1 comment="false" id="0" x="0" y="0"/>
+                                <as-boolean comment="false" id="1" x="0" y="0">
+                                    <actor-get-prop comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="On Ground?"/>
+                                    </actor-get-prop>
+                                </as-boolean>
+                            </and>
+                        </and>
+                    </and>
+                </if>
+                <comment-short comment="false" x="26" y="1113">
+                    <int id="0" val="If we are currently jumping, set the jumping animation"/>
+                </comment-short>
+                <if comment="false" x="26" y="1133">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="1171">
+                            <int id="0" val="15"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                        <if comment="false" x="37" y="1198">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="1236">
+                                    <group eventID="-1" id="-1"/>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <get-val-50-17 comment="false" id="1" x="0" y="0"/>
+                                    </less>
+                                </if>
+                            </group>
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <actor-get-prop comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Facing Right?"/>
+                                </actor-get-prop>
+                            </as-boolean>
+                        </if>
+                        <else comment="false" x="37" y="1318">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="1338">
+                                    <group eventID="-1" id="-1"/>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <get-val-50-17 comment="false" id="1" x="0" y="0"/>
+                                    </less>
+                                </if>
+                            </group>
+                        </else>
+                        <comment-short comment="false" x="37" y="1420">
+                            <int id="0" val="Check to see if the amount of time we&amp;#039;ve been jumping for has exceeded the max jumping time"/>
+                        </comment-short>
+                        <comment-short comment="false" x="37" y="1440">
+                            <int id="0" val="if not, keep setting the jump velocity"/>
+                        </comment-short>
+                        <if comment="false" x="37" y="1460">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="1500">
+                                    <group eventID="-1" id="-1">
+                                        <set-dxy comment="false" x="59" y="1548">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-50-20 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <keystate comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <get-val-50-3 comment="false" id="1" x="0" y="0"/>
+                                        </keystate>
+                                        <and comment="false" id="1" x="0" y="0">
+                                            <not comment="false" id="0" x="0" y="0">
+                                                <get-val-50-1 comment="false" id="0" x="0" y="0"/>
+                                            </not>
+                                            <less comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <get-val-50-17 comment="false" id="1" x="0" y="0"/>
+                                            </less>
+                                        </and>
+                                    </and>
+                                </if>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-val-50-15 comment="false" id="0" x="0" y="0"/>
+                                <div comment="false" id="1" x="0" y="0">
+                                    <times comment="false" id="0" x="0" y="0">
+                                        <get-val-50-8 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1000"/>
+                                    </times>
+                                    <stepsize comment="false" id="1" x="0" y="0"/>
+                                </div>
+                            </lesseq>
+                        </if>
+                    </group>
+                    <as-boolean comment="false" id="0" x="0" y="0">
+                        <actor-get-prop comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Is Jumping?"/>
+                        </actor-get-prop>
+                    </as-boolean>
+                </if>
+                <set-val-50-17 comment="false" x="26" y="1621">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-val-50-17>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

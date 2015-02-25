@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<comment-short comment="false" x="26" y="40">
+<int id="0" val="Inputs:----------------------"/>
+</comment-short>
+<comment-short comment="false" x="26" y="60">
+<int id="0" val="&amp;quot;Is Jumping?&amp;quot; -- Actor Level Attribute, from Behavior &amp;quot;Jumping&amp;quot; (required)"/>
+</comment-short>
+<comment-short comment="false" x="26" y="80">
+<int id="0" val="Outputs:---------------------"/>
+</comment-short>
+<comment-short comment="false" x="26" y="100">
+<int id="0" val="&amp;quot;Is Air Jumping?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute"/>
+</comment-short>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="148">
+<group id="-1">
+<comment-long comment="false" x="26" y="173">
+<int id="0" val="Prevent Air Jump can be set via a custom block by other Behaviors that may want to temporarily prevent Air Jumping"/>
+</comment-long>
+<if comment="false" x="26" y="253">
+<group id="-1">
+<stop comment="false" x="37" y="278"/>
+</group>
+<get-val-5-1 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="26" y="310">
+<group id="-1">
+<set-val-5-2 comment="false" x="37" y="353">
+                            <int id="0" val="0"/>
+                        </set-val-5-2>
+<set-val-5-4 comment="false" x="37" y="373">
+                            <int id="0" val="0"/>
+                        </set-val-5-4>
+<set-val-5-3 comment="false" x="37" y="393">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-5-3>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Jumping?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+<if comment="false" x="26" y="430">
+<group id="-1">
+<if comment="false" x="37" y="468">
+<group id="-1">
+<actor-set-prop comment="false" x="48" y="511">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Air Jumping?"/>
+<false comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+<custom-471 comment="false" x="48" y="543">
+<ACTOR eid="this" id="0"/>
+<get-val-5-12 comment="false" id="1" x="0" y="0"/>
+</custom-471>
+</group>
+<or comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+<as-boolean comment="false" id="1" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Falling?"/>
+</actor-get-prop>
+</as-boolean>
+</or>
+</if>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Air Jumping?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<comment-short comment="false" x="26" y="599">
+<int id="0" val="Check if the Actor is rising or falling"/>
+</comment-short>
+<say-this comment="false" x="26" y="619">
+<int id="0" val="CheckPosition"/>
+</say-this>
+<if comment="false" x="26" y="639">
+<group id="-1">
+<if comment="false" x="37" y="682">
+<group id="-1">
+<if comment="false" x="48" y="720">
+<group id="-1">
+<stop comment="false" x="59" y="755"/>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<get-val-5-8 comment="false" id="0" x="0" y="0"/>
+<not comment="false" id="1" x="0" y="0">
+<get-val-5-3 comment="false" id="0" x="0" y="0"/>
+</not>
+</and>
+</if>
+<dolater comment="false" x="48" y="787">
+<group id="-1">
+<actor-set-prop comment="false" x="59" y="807">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Air Jumping?"/>
+<true comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+<if comment="false" x="59" y="839">
+<group id="-1">
+<custom-332 comment="false" x="70" y="877">
+<ACTOR eid="this" id="0"/>
+<get-val-5-10 comment="false" id="1" x="0" y="0"/>
+<get-val-5-12 comment="false" id="2" x="0" y="0"/>
+</custom-332>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Facing Right?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="59" y="921">
+<group id="-1">
+<custom-332 comment="false" x="70" y="941">
+<ACTOR eid="this" id="0"/>
+<get-val-5-11 comment="false" id="1" x="0" y="0"/>
+<get-val-5-12 comment="false" id="2" x="0" y="0"/>
+</custom-332>
+</group>
+</else>
+</group>
+<int id="0" val="0.05"/>
+</dolater>
+<setdy comment="false" x="48" y="997">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="0"/>
+</setdy>
+<push-shove comment="false" x="48" y="1024">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="1"/>
+<int id="2" val="0"/>
+<int id="3" val="-1"/>
+<get-val-5-9 comment="false" id="4" x="0" y="0"/>
+</push-shove>
+<increment comment="false" x="48" y="1056">
+<int id="0" val="2"/>
+<int id="1" val="1"/>
+</increment>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Jumping?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<keypress2 comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-5-7 comment="false" id="1" x="0" y="0"/>
+</keypress2>
+<less comment="false" id="1" x="0" y="0">
+<get-val-5-2 comment="false" id="0" x="0" y="0"/>
+<get-val-5-6 comment="false" id="1" x="0" y="0"/>
+</less>
+</and>
+</if>
+<set-val-5-5 comment="false" x="26" y="1107">
+                    <gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+                </set-val-5-5>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="1136">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="1209">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="1282">
+<group id="-1">
+<if comment="false" x="26" y="1307">
+<group id="-1">
+<increment comment="false" x="37" y="1350">
+<int id="0" val="4"/>
+<stepsize comment="false" id="1" x="0" y="0"/>
+</increment>
+<if comment="false" x="37" y="1382">
+<group id="-1">
+<set-val-5-3 comment="false" x="48" y="1412">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-5-3>
+</group>
+<moreeq comment="false" id="0" x="0" y="0">
+<get-val-5-4 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="150"/>
+</moreeq>
+</if>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<get-val-5-3 comment="false" id="0" x="0" y="0"/>
+<more comment="false" id="1" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<get-val-5-5 comment="false" id="1" x="0" y="0"/>
+</more>
+</and>
+</if>
+<if comment="false" x="26" y="1461">
+<group id="-1">
+<set-val-5-3 comment="false" x="37" y="1499">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-5-3>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<get-val-5-5 comment="false" id="1" x="0" y="0"/>
+</less>
+</if>
+</group>
+<int id="0" val="CheckPosition"/>
+</receive-message>
+</group>
+<group id="5">
+<receiver-1-7 comment="false" x="15" y="1564">
+            <group id="-1">
+<set-val-5-1 comment="false" x="26" y="1594">
+                    <get-byobval-115-20-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-5-1>
+</group>
+            <get-byobval-115-20-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-115-20-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-7>
+</group>
+<group id="-1"/>
+</groups>

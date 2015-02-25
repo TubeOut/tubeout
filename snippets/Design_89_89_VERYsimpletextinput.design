@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <custom-code comment="false" x="26" y="40">
+                    <int id="0" val="_X = &amp;quot;&amp;quot;"/>
+                </custom-code>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="if(FlxG.keys.justPressed(&amp;quot;ONE&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;1&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;TWO&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;2&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;THREE&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;3&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;FOUR&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;4&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;FIVE&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;5&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;SIX&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;6&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;SEVEN&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;7&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;EIGHT&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;8&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;NINE&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;9&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;ZERO&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;0&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;SPACE&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot; &amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;A&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;A&amp;quot;&#10;&#9; WRITE();&#10;&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;B&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;B&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;C&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;C&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;D&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;D&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;E&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;E&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;F&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;F&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;G&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;G&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;H&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;H&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;I&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;I&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;J&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;J&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;K&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;K&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;L&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;L&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;M&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;M&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;N&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;N&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;O&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;O&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;P&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;P&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;Q&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;Q&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;R&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;R&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;S&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;S&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;T&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;T&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;U&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;U&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;V&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;V&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;W&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;W&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;X&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;X&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;Y&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;Y&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;Z&amp;quot;))&#10;{&#10;&#9; _L = &amp;quot;Z&amp;quot;&#10;&#9; WRITE();&#10;}&#10;if(FlxG.keys.justPressed(&amp;quot;BACKSPACE&amp;quot;))&#10;{&#10;&#9;DELETE();&#10;}&#10;"/>
+                </code-long>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <get-val-89-6 comment="false" id="0" x="0" y="0"/>
+                </set-font-new>
+                <set-font-color comment="false" x="26" y="72">
+                    <get-val-89-7 comment="false" id="0" x="0" y="0"/>
+                </set-font-color>
+                <draw-text comment="false" x="26" y="104">
+                    <get-val-89-1 comment="false" id="0" x="0" y="0"/>
+                    <get-val-89-4 comment="false" id="1" x="0" y="0"/>
+                    <get-val-89-5 comment="false" id="2" x="0" y="0"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <code-long comment="false" x="37" y="75">
+                            <int id="0" val=" _X = (String(_X) + String(_L));&#10;"/>
+                        </code-long>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <str-length comment="false" id="0" x="0" y="0">
+                            <get-val-89-1 comment="false" id="0" x="0" y="0"/>
+                        </str-length>
+                        <get-val-89-3 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+            <int id="0" val="WRITE"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-89-1 comment="false" x="26" y="40">
+                    <str-substring comment="false" id="0" x="0" y="0">
+                        <get-val-89-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                        <minus comment="false" id="2" x="0" y="0">
+                            <str-length comment="false" id="0" x="0" y="0">
+                                <get-val-89-1 comment="false" id="0" x="0" y="0"/>
+                            </str-length>
+                            <int id="1" val="1"/>
+                        </minus>
+                    </str-substring>
+                </set-val-89-1>
+            </group>
+            <int id="0" val="DELETE"/>
+        </receive-message>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

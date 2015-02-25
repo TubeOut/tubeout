@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <toggle-image comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                </toggle-image>
+                <ignore-screen-tolerance comment="false" x="26" y="67">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1">
+        <actor-in-group comment="false" x="1222" y="199"/>
+        <actor-in-group comment="false" x="1165" y="184"/>
+    </group>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <actors-in-group comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-93-2 comment="false" x="37" y="80">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="Racecar Functionality"/>
+                                    <int id="2" val="_PlayerNum"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-93-2>
+                        <if comment="false" x="37" y="123">
+                            <group eventID="-1" id="-1">
+                                <replace-list comment="false" x="48" y="173">
+                                    <int id="0" val=""/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-val-93-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </minus>
+                                    <sqrt comment="false" id="2" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <pow comment="false" id="0" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="2"/>
+                                                    </get-xy>
+                                                    <get-xy comment="false" id="1" x="0" y="0">
+                                                        <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="2"/>
+                                                    </get-xy>
+                                                </minus>
+                                                <int id="1" val="2"/>
+                                            </pow>
+                                            <pow comment="false" id="1" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="3"/>
+                                                    </get-xy>
+                                                    <get-xy comment="false" id="1" x="0" y="0">
+                                                        <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="3"/>
+                                                    </get-xy>
+                                                </minus>
+                                                <int id="1" val="2"/>
+                                            </pow>
+                                        </plus>
+                                    </sqrt>
+                                </replace-list>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <int id="0" val=""/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <get-val-93-2 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="1"/>
+                                            </minus>
+                                        </get-item>
+                                    </as-number>
+                                    <int id="1" val="1"/>
+                                </plus>
+                                <get-val-93-1 comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <pick-group comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </pick-group>
+                </actors-in-group>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1">
+        <actor-in-group comment="false" x="1222" y="199"/>
+        <actor-in-group comment="false" x="1165" y="184"/>
+    </group>
+    <group eventID="3" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="108">
+                            <int id="0" val=""/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="lastcollided" id="0"/>
+                                        <int id="1" val="Racecar Functionality"/>
+                                        <int id="2" val="_PlayerNum"/>
+                                    </get-attribute>
+                                </as-number>
+                                <int id="1" val="1"/>
+                            </minus>
+                            <get-val-93-1 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                        <actors-in-group comment="false" x="37" y="151">
+                            <group eventID="-1" id="-1">
+                                <shout comment="false" x="48" y="191">
+                                    <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="recalc_distance"/>
+                                </shout>
+                            </group>
+                            <pick-group comment="false" id="0" x="0" y="0">
+                                <int id="0" val="4"/>
+                            </pick-group>
+                        </actors-in-group>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-item comment="false" id="0" x="0" y="0">
+                                    <int id="0" val=""/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <get-attribute comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="lastcollided" id="0"/>
+                                                <int id="1" val="Racecar Functionality"/>
+                                                <int id="2" val="_PlayerNum"/>
+                                            </get-attribute>
+                                        </as-number>
+                                        <int id="1" val="1"/>
+                                    </minus>
+                                </get-item>
+                            </as-number>
+                            <int id="1" val="1"/>
+                        </plus>
+                        <get-val-93-1 comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="3" id="-1">
+        <actor-in-group comment="false" x="1165" y="184"/>
+        <actor-in-group comment="false" x="1222" y="199"/>
+    </group>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <actors-in-group comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-93-2 comment="false" x="37" y="80">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="Racecar Functionality"/>
+                                    <int id="2" val="_PlayerNum"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-93-2>
+                        <if comment="false" x="37" y="123">
+                            <group eventID="-1" id="-1">
+                                <replace-list comment="false" x="48" y="173">
+                                    <int id="0" val=""/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-val-93-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </minus>
+                                    <sqrt comment="false" id="2" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <pow comment="false" id="0" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="2"/>
+                                                    </get-xy>
+                                                    <get-xy comment="false" id="1" x="0" y="0">
+                                                        <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="2"/>
+                                                    </get-xy>
+                                                </minus>
+                                                <int id="1" val="2"/>
+                                            </pow>
+                                            <pow comment="false" id="1" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="3"/>
+                                                    </get-xy>
+                                                    <get-xy comment="false" id="1" x="0" y="0">
+                                                        <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="3"/>
+                                                    </get-xy>
+                                                </minus>
+                                                <int id="1" val="2"/>
+                                            </pow>
+                                        </plus>
+                                    </sqrt>
+                                </replace-list>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <int id="0" val=""/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <get-val-93-2 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="1"/>
+                                            </minus>
+                                        </get-item>
+                                    </as-number>
+                                    <int id="1" val="1"/>
+                                </plus>
+                                <get-val-93-1 comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <pick-group comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </pick-group>
+                </actors-in-group>
+            </group>
+            <int id="0" val="recalc_distance"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1">
+        <actor-in-group comment="false" x="1165" y="184"/>
+        <actor-in-group comment="false" x="1222" y="199"/>
+    </group>
+</groups>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="54" y="23">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="56" y="80">
+            <group id="-1"/>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="68" y="160">
+            <group id="-1">
+                <fadeInOut comment="false" x="79" y="185">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <get-val-83-2 comment="false" id="2" x="0" y="0"/>
+                    <int id="3" val="7"/>
+                </fadeInOut>
+                <dolater comment="false" x="79" y="217">
+                    <group id="-1">
+                        <die comment="false" x="90" y="249">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <get-val-83-2 comment="false" id="0" x="0" y="0"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="60" y="370">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <if comment="false" x="243" y="371">
+            <group id="-1"/>
+            <int id="0" val=""/>
+        </if>
+    </group>
+    <group id="-1"/>
+</groups>

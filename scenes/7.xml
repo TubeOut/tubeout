@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="86" extheight="704" extwidth="1664" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="50.0" height="640" id="7" name="Scena 8" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1600">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="255"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions>
+        <region b="64" g="64" h="301" id="0" name="Region 0" pts="4,13.0,0.0,13.0,301.0,0.0,301.0,0.0,0.0" r="64" type="box" w="13" x="1551" y="168"/>
+    </regions>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="137" c="false" group="4" id="69" name="Freccia 137" sx="1.0" sy="1.0" x="1312" y="448" z="0"/>
+        <actor a="0.0" aid="136" c="false" group="4" id="69" name="Freccia 136" sx="1.0" sy="1.0" x="1280" y="448" z="0"/>
+        <actor a="0.0" aid="139" c="false" group="4" id="69" name="Freccia 139" sx="1.0" sy="1.0" x="1376" y="448" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="4" id="69" name="Freccia 2" sx="1.0" sy="1.0" x="32" y="448" z="0"/>
+        <actor a="0.0" aid="138" c="false" group="4" id="69" name="Freccia 138" sx="1.0" sy="1.0" x="1344" y="448" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="4" id="69" name="Freccia 3" sx="1.0" sy="1.0" x="96" y="448" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="4" id="69" name="Freccia 4" sx="1.0" sy="1.0" x="160" y="448" z="0"/>
+        <actor a="0.0" aid="140" c="false" group="4" id="69" name="Freccia 140" sx="1.0" sy="1.0" x="1408" y="448" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="4" id="69" name="Freccia 5" sx="1.0" sy="1.0" x="256" y="448" z="0"/>
+        <actor a="180.0" aid="143" c="false" group="4" id="69" name="Freccia 143" sx="1.0" sy="1.0" x="192" y="160" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="4" id="69" name="Freccia 6" sx="1.0" sy="1.0" x="224" y="448" z="0"/>
+        <actor a="180.0" aid="142" c="false" group="4" id="69" name="Freccia 142" sx="1.0" sy="1.0" x="160" y="160" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="4" id="69" name="Freccia 8" sx="1.0" sy="1.0" x="352" y="448" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="4" id="69" name="Freccia 9" sx="1.0" sy="1.0" x="384" y="448" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="4" id="69" name="Freccia 10" sx="1.0" sy="1.0" x="416" y="448" z="0"/>
+        <actor a="0.0" aid="12" c="false" group="4" id="69" name="Freccia 12" sx="1.0" sy="1.0" x="512" y="448" z="0"/>
+        <actor a="0.0" aid="13" c="false" group="4" id="69" name="Freccia 13" sx="1.0" sy="1.0" x="544" y="448" z="0"/>
+        <actor a="0.0" aid="14" c="false" group="4" id="69" name="Freccia 14" sx="1.0" sy="1.0" x="640" y="448" z="0"/>
+        <actor a="0.0" aid="15" c="false" group="4" id="69" name="Freccia 15" sx="1.0" sy="1.0" x="672" y="448" z="0"/>
+        <actor a="0.0" aid="17" c="false" group="4" id="69" name="Freccia 17" sx="1.0" sy="1.0" x="736" y="448" z="0"/>
+        <actor a="180.0" aid="152" c="false" group="4" id="69" name="Freccia 152" sx="1.0" sy="1.0" x="480" y="160" z="0"/>
+        <actor a="0.0" aid="16" c="false" group="4" id="69" name="Freccia 16" sx="1.0" sy="1.0" x="704" y="448" z="0"/>
+        <actor a="180.0" aid="153" c="false" group="4" id="69" name="Freccia 153" sx="1.0" sy="1.0" x="512" y="160" z="0"/>
+        <actor a="180.0" aid="154" c="false" group="4" id="69" name="Freccia 154" sx="1.0" sy="1.0" x="544" y="160" z="0"/>
+        <actor a="180.0" aid="155" c="false" group="4" id="69" name="Freccia 155" sx="1.0" sy="1.0" x="576" y="160" z="0"/>
+        <actor a="0.0" aid="18" c="false" group="4" id="69" name="Freccia 18" sx="1.0" sy="1.0" x="768" y="448" z="0"/>
+        <actor a="180.0" aid="156" c="false" group="4" id="69" name="Freccia 156" sx="1.0" sy="1.0" x="608" y="160" z="0"/>
+        <actor a="0.0" aid="21" c="false" group="4" id="69" name="Freccia 21" sx="1.0" sy="1.0" x="896" y="448" z="0"/>
+        <actor a="180.0" aid="157" c="false" group="4" id="69" name="Freccia 157" sx="1.0" sy="1.0" x="640" y="160" z="0"/>
+        <actor a="0.0" aid="20" c="false" group="4" id="69" name="Freccia 20" sx="1.0" sy="1.0" x="864" y="448" z="0"/>
+        <actor a="180.0" aid="158" c="false" group="4" id="69" name="Freccia 158" sx="1.0" sy="1.0" x="672" y="160" z="0"/>
+        <actor a="180.0" aid="159" c="false" group="4" id="69" name="Freccia 159" sx="1.0" sy="1.0" x="704" y="160" z="0"/>
+        <actor a="0.0" aid="22" c="false" group="4" id="69" name="Freccia 22" sx="1.0" sy="1.0" x="928" y="448" z="0"/>
+        <actor a="180.0" aid="145" c="false" group="4" id="69" name="Freccia 145" sx="1.0" sy="1.0" x="256" y="160" z="0"/>
+        <actor a="180.0" aid="146" c="false" group="4" id="69" name="Freccia 146" sx="1.0" sy="1.0" x="288" y="160" z="0"/>
+        <actor a="180.0" aid="147" c="false" group="4" id="69" name="Freccia 147" sx="1.0" sy="1.0" x="320" y="160" z="0"/>
+        <actor a="180.0" aid="148" c="false" group="4" id="69" name="Freccia 148" sx="1.0" sy="1.0" x="352" y="160" z="0"/>
+        <actor a="180.0" aid="149" c="false" group="4" id="69" name="Freccia 149" sx="1.0" sy="1.0" x="384" y="160" z="0"/>
+        <actor a="180.0" aid="150" c="false" group="4" id="69" name="Freccia 150" sx="1.0" sy="1.0" x="416" y="160" z="0"/>
+        <actor a="180.0" aid="151" c="false" group="4" id="69" name="Freccia 151" sx="1.0" sy="1.0" x="448" y="160" z="0"/>
+        <actor a="0.0" aid="168" c="false" group="0" id="116" name="Stick 168" sx="1.0" sy="1.0" x="54" y="168" z="0"/>
+        <actor a="180.0" aid="163" c="false" group="4" id="69" name="Freccia 163" sx="1.0" sy="1.0" x="832" y="160" z="0"/>
+        <actor a="180.0" aid="162" c="false" group="4" id="69" name="Freccia 162" sx="1.0" sy="1.0" x="800" y="160" z="0"/>
+        <actor a="180.0" aid="161" c="false" group="4" id="69" name="Freccia 161" sx="1.0" sy="1.0" x="768" y="160" z="0"/>
+        <actor a="180.0" aid="160" c="false" group="4" id="69" name="Freccia 160" sx="1.0" sy="1.0" x="736" y="160" z="0"/>
+        <actor a="180.0" aid="167" c="false" group="4" id="69" name="Freccia 167" sx="1.0" sy="1.0" x="224" y="160" z="0"/>
+        <actor a="180.0" aid="166" c="false" group="4" id="69" name="Freccia 166" sx="1.0" sy="1.0" x="928" y="160" z="0"/>
+        <actor a="180.0" aid="165" c="false" group="4" id="69" name="Freccia 165" sx="1.0" sy="1.0" x="896" y="160" z="0"/>
+        <actor a="180.0" aid="164" c="false" group="4" id="69" name="Freccia 164" sx="1.0" sy="1.0" x="864" y="160" z="0"/>
+        <actor a="0.0" aid="59" c="false" group="3" id="131" name="Blocco 59" sx="1.0" sy="1.0" x="1088" y="224" z="0"/>
+        <actor a="0.0" aid="63" c="false" group="3" id="131" name="Blocco 63" sx="1.0" sy="1.0" x="1088" y="288" z="0"/>
+        <actor a="0.0" aid="62" c="false" group="3" id="131" name="Blocco 62" sx="1.0" sy="1.0" x="1088" y="288" z="0"/>
+        <actor a="0.0" aid="61" c="false" group="3" id="131" name="Blocco 61" sx="1.0" sy="1.0" x="1088" y="256" z="0"/>
+        <actor a="0.0" aid="60" c="false" group="3" id="131" name="Blocco 60" sx="1.0" sy="1.0" x="1088" y="224" z="0"/>
+        <actor a="0.0" aid="68" c="false" group="3" id="131" name="Blocco 68" sx="1.0" sy="1.0" x="1088" y="384" z="0"/>
+        <actor a="0.0" aid="69" c="false" group="3" id="131" name="Blocco 69" sx="1.0" sy="1.0" x="1088" y="416" z="0"/>
+        <actor a="0.0" aid="70" c="false" group="3" id="131" name="Blocco 70" sx="1.0" sy="1.0" x="1088" y="416" z="0"/>
+        <actor a="0.0" aid="71" c="false" group="3" id="131" name="Blocco 71" sx="1.0" sy="1.0" x="1088" y="448" z="0"/>
+        <actor a="0.0" aid="64" c="false" group="3" id="131" name="Blocco 64" sx="1.0" sy="1.0" x="1088" y="320" z="0"/>
+        <actor a="0.0" aid="65" c="false" group="3" id="131" name="Blocco 65" sx="1.0" sy="1.0" x="1088" y="352" z="0"/>
+        <actor a="0.0" aid="66" c="false" group="3" id="131" name="Blocco 66" sx="1.0" sy="1.0" x="1088" y="352" z="0"/>
+        <actor a="0.0" aid="67" c="false" group="3" id="131" name="Blocco 67" sx="1.0" sy="1.0" x="1088" y="384" z="0"/>
+        <actor a="0.0" aid="76" c="false" group="3" id="131" name="Blocco 76" sx="1.0" sy="1.0" x="1152" y="224" z="0"/>
+        <actor a="0.0" aid="77" c="false" group="3" id="131" name="Blocco 77" sx="1.0" sy="1.0" x="1152" y="224" z="0"/>
+        <actor a="0.0" aid="78" c="false" group="3" id="131" name="Blocco 78" sx="1.0" sy="1.0" x="1120" y="224" z="0"/>
+        <actor a="0.0" aid="79" c="false" group="3" id="131" name="Blocco 79" sx="1.0" sy="1.0" x="1120" y="288" z="0"/>
+        <actor a="0.0" aid="72" c="false" group="3" id="133" name="Sentry 72" sx="1.0" sy="1.0" x="1120" y="160" z="0"/>
+        <actor a="0.0" aid="85" c="false" group="3" id="131" name="Blocco 85" sx="1.0" sy="1.0" x="1152" y="288" z="0"/>
+        <actor a="0.0" aid="84" c="false" group="3" id="131" name="Blocco 84" sx="1.0" sy="1.0" x="1152" y="288" z="0"/>
+        <actor a="0.0" aid="87" c="false" group="3" id="131" name="Blocco 87" sx="1.0" sy="1.0" x="1152" y="288" z="0"/>
+        <actor a="0.0" aid="86" c="false" group="3" id="131" name="Blocco 86" sx="1.0" sy="1.0" x="1152" y="288" z="0"/>
+        <actor a="0.0" aid="81" c="false" group="3" id="131" name="Blocco 81" sx="1.0" sy="1.0" x="1120" y="352" z="0"/>
+        <actor a="0.0" aid="80" c="false" group="3" id="131" name="Blocco 80" sx="1.0" sy="1.0" x="1152" y="256" z="0"/>
+        <actor a="0.0" aid="83" c="false" group="3" id="131" name="Blocco 83" sx="1.0" sy="1.0" x="1120" y="320" z="0"/>
+        <actor a="0.0" aid="82" c="false" group="3" id="131" name="Blocco 82" sx="1.0" sy="1.0" x="1120" y="288" z="0"/>
+        <actor a="0.0" aid="93" c="false" group="3" id="131" name="Blocco 93" sx="1.0" sy="1.0" x="1120" y="384" z="0"/>
+        <actor a="0.0" aid="92" c="false" group="3" id="131" name="Blocco 92" sx="1.0" sy="1.0" x="1120" y="384" z="0"/>
+        <actor a="0.0" aid="95" c="false" group="3" id="131" name="Blocco 95" sx="1.0" sy="1.0" x="1152" y="416" z="0"/>
+        <actor a="0.0" aid="94" c="false" group="3" id="131" name="Blocco 94" sx="1.0" sy="1.0" x="1120" y="416" z="0"/>
+        <actor a="0.0" aid="89" c="false" group="3" id="131" name="Blocco 89" sx="1.0" sy="1.0" x="1152" y="384" z="0"/>
+        <actor a="0.0" aid="88" c="false" group="3" id="131" name="Blocco 88" sx="1.0" sy="1.0" x="1120" y="256" z="0"/>
+        <actor a="0.0" aid="91" c="false" group="3" id="131" name="Blocco 91" sx="1.0" sy="1.0" x="1152" y="352" z="0"/>
+        <actor a="0.0" aid="90" c="false" group="3" id="131" name="Blocco 90" sx="1.0" sy="1.0" x="1152" y="320" z="0"/>
+        <actor a="0.0" aid="98" c="false" group="3" id="131" name="Blocco 98" sx="1.0" sy="1.0" x="1152" y="224" z="0"/>
+        <actor a="0.0" aid="96" c="false" group="3" id="131" name="Blocco 96" sx="1.0" sy="1.0" x="1152" y="448" z="0"/>
+        <actor a="0.0" aid="97" c="false" group="3" id="131" name="Blocco 97" sx="1.0" sy="1.0" x="1120" y="448" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="38">
+            <prop id="1" list="0" val="168"/>
+            <prop id="2" list="0" val="1"/>
+            <prop id="3" list="0" val="1"/>
+        </s>
+        <s enabled="true" id="40">
+            <prop id="1" list="0" val="0"/>
+            <prop id="2" list="0" val="8"/>
+            <prop id="4" list="0" val="168"/>
+            <prop id="5" list="0" val="1"/>
+            <prop id="6" list="0" val="1"/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="2,0.0,0.0,64.0,0.0" x="384.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="576.0" y="480.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="128.0" y="256.0"/>
+        <p pts="2,64.0,0.0,0.0,0.0" x="1280.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1536.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="640.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1024.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="128.0" y="160.0"/>
+        <p pts="2,64.0,0.0,0.0,0.0" x="1344.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1152.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="32.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="512.0" y="160.0"/>
+        <p pts="2,64.0,0.0,0.0,0.0" x="1024.0" y="480.0"/>
+        <p pts="4,32.0,0.0,32.0,0.32000732,0.0,0.32000732,0.0,0.0" x="96.0" y="159.68"/>
+        <p pts="4,32.0,64.0,0.0,32.0,32.0,0.0,64.0,32.0" x="64.0" y="192.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="192.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="256.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="768.0" y="160.0"/>
+        <p pts="2,0.0,0.0,0.0,64.0" x="32.0" y="416.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="192.0" y="160.0"/>
+        <p pts="4,0.0,32.0,32.0,0.0,64.0,32.0,32.0,64.0" x="64.0" y="256.0"/>
+        <p pts="2,64.0,0.0,0.0,0.0" x="1472.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="704.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="768.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1472.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="896.0" y="480.0"/>
+        <p pts="2,64.0,0.0,0.0,0.0" x="1088.0" y="480.0"/>
+        <p pts="2,64.0,0.0,0.0,0.0" x="1216.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="384.0" y="480.0"/>
+        <p pts="2,64.0,0.0,0.0,0.0" x="1408.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="576.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="832.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1216.0" y="160.0"/>
+        <p pts="2,0.0,64.0,0.0,0.0" x="32.0" y="160.0"/>
+        <p pts="4,32.0,0.0,32.0,32.0,0.0,32.0,0.0,0.0" x="32.0" y="416.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="320.0" y="480.0"/>
+        <p pts="2,0.0,0.0,0.0,64.0" x="32.0" y="288.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="64.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="512.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="960.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1344.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="256.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="448.0" y="160.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="64.0" y="320.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="832.0" y="480.0"/>
+        <p pts="2,0.0,64.0,0.0,0.0" x="32.0" y="352.0"/>
+        <p pts="4,32.0,0.0,32.0,0.32000732,0.0,0.32000732,0.0,0.0" x="32.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="320.0" y="160.0"/>
+        <p pts="3,0.0,32.0,32.0,0.0,64.0,32.0" x="96.0" y="160.0"/>
+        <p pts="2,64.0,0.0,0.0,0.0" x="1152.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="960.0" y="480.0"/>
+        <p pts="4,32.0,0.0,32.0,0.32000732,0.0,0.32000732,0.0,0.0" x="1536.0" y="159.68"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="640.0" y="480.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1408.0" y="160.0"/>
+        <p pts="3,32.0,0.0,0.0,32.0,0.0,0.0" x="128.0" y="320.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="704.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="896.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="448.0" y="480.0"/>
+        <p pts="4,64.0,32.0,32.0,64.0,0.0,32.0,32.0,0.0" x="128.0" y="192.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1280.0" y="160.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="1088.0" y="160.0"/>
+        <p pts="2,0.0,0.0,0.0,64.0" x="32.0" y="224.0"/>
+        <p pts="2,0.0,0.0,64.0,0.0" x="128.0" y="480.0"/>
+    </terrain>
+</scene>

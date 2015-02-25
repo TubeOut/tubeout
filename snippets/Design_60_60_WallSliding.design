@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<comment-short comment="false" x="26" y="40">
+<int id="0" val="Inputs: ----------------------"/>
+</comment-short>
+<comment-short comment="false" x="26" y="60">
+<int id="0" val="&amp;quot;On Ground?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;On Ground&amp;quot; Behavior (required)"/>
+</comment-short>
+<comment-short comment="false" x="26" y="80">
+<int id="0" val="&amp;quot;Facing Right?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;Walking&amp;quot; Behavior (required)"/>
+</comment-short>
+<comment-short comment="false" x="26" y="100">
+<int id="0" val="&amp;quot;Is Wall Jumping?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;Wall Jumping&amp;quot; Behavior (NOT required)"/>
+</comment-short>
+<comment-short comment="false" x="26" y="120">
+<int id="0" val="&amp;quot;Is Climbing?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;Climbing&amp;quot; Behavior (NOT required)"/>
+</comment-short>
+<comment-short comment="false" x="26" y="140">
+<int id="0" val="&amp;quot;Is Ducking?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;Ducking&amp;quot; Behavior (NOT required)"/>
+</comment-short>
+<comment-short comment="false" x="26" y="160">
+<int id="0" val="Outputs: ---------------------"/>
+</comment-short>
+<comment-short comment="false" x="26" y="180">
+<int id="0" val="&amp;quot;Is Wall Sliding?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute"/>
+</comment-short>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="228">
+<group id="-1">
+<if comment="false" x="26" y="253">
+<group id="-1">
+<set-val-60-1 comment="false" x="37" y="278">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-60-1>
+<actor-set-prop comment="false" x="37" y="303">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Wall Sliding?"/>
+<false comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+<custom-471 comment="false" x="37" y="335">
+<ACTOR eid="this" id="0"/>
+<get-val-60-14 comment="false" id="1" x="0" y="0"/>
+</custom-471>
+<stop comment="false" x="37" y="367"/>
+</group>
+<get-val-60-13 comment="false" id="0" x="0" y="0"/>
+</if>
+<set-val-60-1 comment="false" x="26" y="399">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-60-1>
+<if comment="false" x="26" y="424">
+<group id="-1">
+<set-val-60-1 comment="false" x="37" y="472">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-60-1>
+<actor-set-prop comment="false" x="37" y="497">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Wall Sliding?"/>
+<false comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+</group>
+<or comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Climbing?"/>
+</actor-get-prop>
+</as-boolean>
+<or comment="false" id="1" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Ducking?"/>
+</actor-get-prop>
+</as-boolean>
+<as-boolean comment="false" id="1" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+</or>
+</or>
+</if>
+<set-val-60-4 comment="false" x="26" y="541">
+                    <get-val-60-2 comment="false" id="0" x="0" y="0"/>
+                </set-val-60-4>
+<set-val-60-5 comment="false" x="26" y="566">
+                    <get-val-60-3 comment="false" id="0" x="0" y="0"/>
+                </set-val-60-5>
+<set-val-60-2 comment="false" x="26" y="591">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-60-2>
+<set-val-60-3 comment="false" x="26" y="616">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-60-3>
+<if comment="false" x="26" y="641">
+<group id="-1">
+<if comment="false" x="37" y="684">
+<group id="-1">
+<if comment="false" x="48" y="727">
+<group id="-1">
+<actor-set-prop comment="false" x="59" y="775">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Wall Sliding?"/>
+<true comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+</group>
+<or comment="false" id="0" x="0" y="0">
+<and comment="false" id="0" x="0" y="0">
+<get-val-60-4 comment="false" id="0" x="0" y="0"/>
+<keydown2new comment="false" id="1" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-60-7 comment="false" id="1" x="0" y="0"/>
+</keydown2new>
+</and>
+<and comment="false" id="1" x="0" y="0">
+<get-val-60-5 comment="false" id="0" x="0" y="0"/>
+<keydown2new comment="false" id="1" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-60-8 comment="false" id="1" x="0" y="0"/>
+</keydown2new>
+</and>
+</or>
+</if>
+<else comment="false" x="48" y="819">
+<group id="-1">
+<actor-set-prop comment="false" x="59" y="839">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Wall Sliding?"/>
+<false comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+</group>
+</else>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<more comment="false" id="0" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<get-val-60-6 comment="false" id="1" x="0" y="0"/>
+</more>
+<get-val-60-1 comment="false" id="1" x="0" y="0"/>
+</and>
+</if>
+<if comment="false" x="26" y="907">
+<group id="-1">
+<setdy comment="false" x="37" y="945">
+<ACTOR eid="this" id="0"/>
+<get-val-60-9 comment="false" id="1" x="0" y="0"/>
+</setdy>
+<if comment="false" x="37" y="977">
+<group id="-1">
+<custom-332 comment="false" x="48" y="1015">
+<ACTOR eid="this" id="0"/>
+<get-val-60-10 comment="false" id="1" x="0" y="0"/>
+<get-val-60-14 comment="false" id="2" x="0" y="0"/>
+</custom-332>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Facing Right?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="37" y="1059">
+<group id="-1">
+<custom-332 comment="false" x="48" y="1079">
+<ACTOR eid="this" id="0"/>
+<get-val-60-11 comment="false" id="1" x="0" y="0"/>
+<get-val-60-14 comment="false" id="2" x="0" y="0"/>
+</custom-332>
+</group>
+</else>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Wall Sliding?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="26" y="1135">
+<group id="-1">
+<custom-471 comment="false" x="37" y="1155">
+<ACTOR eid="this" id="0"/>
+<get-val-60-14 comment="false" id="1" x="0" y="0"/>
+</custom-471>
+</group>
+</else>
+<set-val-60-6 comment="false" x="26" y="1199">
+                    <gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+                </set-val-60-6>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="1250">
+<group id="-1">
+<if comment="false" x="26" y="1275">
+<group id="-1">
+<stop comment="false" x="37" y="1308"/>
+</group>
+<collision-sensor comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-sensor>
+</if>
+<if comment="false" x="26" y="1340">
+<group id="-1">
+<if comment="false" x="37" y="1373">
+<group id="-1">
+<stop comment="false" x="48" y="1416"/>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<get-val-60-12 comment="false" id="0" x="0" y="0"/>
+<not comment="false" id="1" x="0" y="0">
+<collision-tile comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-tile>
+</not>
+</and>
+</if>
+<set-val-60-2 comment="false" x="37" y="1448">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-60-2>
+</group>
+<collision-left comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-left>
+</if>
+<if comment="false" x="26" y="1485">
+<group id="-1">
+<if comment="false" x="37" y="1518">
+<group id="-1">
+<stop comment="false" x="48" y="1561"/>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<get-val-60-12 comment="false" id="0" x="0" y="0"/>
+<not comment="false" id="1" x="0" y="0">
+<collision-tile comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-tile>
+</not>
+</and>
+</if>
+<set-val-60-3 comment="false" x="37" y="1593">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-60-3>
+</group>
+<collision-right comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-right>
+</if>
+</group>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="1658">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receiver-1-114 comment="false" x="15" y="1731">
+            <group id="-1">
+<set-val-60-13 comment="false" x="26" y="1761">
+                    <get-byobval-180-21-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-60-13>
+</group>
+            <get-byobval-180-21-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-180-21-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-114>
+</group>
+<group id="-1"/>
+</groups>

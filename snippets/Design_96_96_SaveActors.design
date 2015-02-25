@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <custom-code comment="false" x="26" y="40">
+                    <int id="0" val="_SavedList = getGameAttribute(_SaveGameAttribute) as Array;"/>
+                </custom-code>
+                <custom-code comment="false" x="26" y="60">
+                    <int id="0" val="_SceneNameList = getGameAttribute(_SceneNameGameAttribute) as Array;"/>
+                </custom-code>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-96-9 comment="false" x="37" y="70">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-96-9>
+                        <say-this comment="false" x="37" y="95">
+                            <int id="0" val="LoadActors"/>
+                        </say-this>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-96-9 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-1-146 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="75">
+                            <group eventID="-1" id="-1">
+                                <add-list comment="false" x="48" y="110">
+                                    <get-val-96-10 comment="false" id="0" x="0" y="0"/>
+                                    <scenename comment="false" id="1" x="0" y="0"/>
+                                </add-list>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <contains-item comment="false" id="0" x="0" y="0">
+                                    <get-val-96-10 comment="false" id="0" x="0" y="0"/>
+                                    <scenename comment="false" id="1" x="0" y="0"/>
+                                </contains-item>
+                            </not>
+                        </if>
+                        <repeat comment="false" x="37" y="147">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="177">
+                                    <group eventID="-1" id="-1">
+                                        <replace-list comment="false" x="59" y="212">
+                                            <get-val-96-7 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <str-combine comment="false" id="2" x="0" y="0">
+                                                <tostring comment="false" id="0" x="0" y="0">
+                                                    <actor comment="false" id="0" x="0" y="0">
+                                                        <get-byobval-96-326-0 comment="false" id="0" x="0" y="0"/>
+                                                    </actor>
+                                                </tostring>
+                                                <str-combine comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val=","/>
+                                                    <str-combine comment="false" id="1" x="0" y="0">
+                                                        <tostring comment="false" id="0" x="0" y="0">
+                                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                                <get-byobval-96-326-0 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="0"/>
+                                                            </get-xy>
+                                                        </tostring>
+                                                        <str-combine comment="false" id="1" x="0" y="0">
+                                                            <str-combine comment="false" id="0" x="0" y="0">
+                                                                <int id="0" val=","/>
+                                                                <tostring comment="false" id="1" x="0" y="0">
+                                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                                        <get-byobval-96-326-0 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="1"/>
+                                                                    </get-xy>
+                                                                </tostring>
+                                                            </str-combine>
+                                                            <str-combine comment="false" id="1" x="0" y="0">
+                                                                <int id="0" val=","/>
+                                                                <tostring comment="false" id="1" x="0" y="0">
+                                                                    <getlayer comment="false" id="0" x="0" y="0">
+                                                                        <get-byobval-96-326-0 comment="false" id="0" x="0" y="0"/>
+                                                                    </getlayer>
+                                                                </tostring>
+                                                            </str-combine>
+                                                        </str-combine>
+                                                    </str-combine>
+                                                </str-combine>
+                                            </str-combine>
+                                        </replace-list>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <scenename comment="false" id="0" x="0" y="0"/>
+                                        <get-item-text comment="false" id="1" x="0" y="0">
+                                            <get-val-96-10 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-text>
+                                    </eq>
+                                </if>
+                            </group>
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <get-val-96-10 comment="false" id="0" x="0" y="0"/>
+                            </length-list>
+                        </repeat>
+                        <set-val-96-1 comment="false" x="37" y="304">
+                            <get-val-96-7 comment="false" id="0" x="0" y="0"/>
+                        </set-val-96-1>
+                        <set-val-96-13 comment="false" x="37" y="329">
+                            <get-val-96-10 comment="false" id="0" x="0" y="0"/>
+                        </set-val-96-13>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <is-transitioning comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <get-byobval-96-326-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-1-146>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <repeat comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="-1" id="-1">
+                                <set-val-96-6 comment="false" x="48" y="105">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <str-split comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-96-7 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val=","/>
+                                        </str-split>
+                                        <int id="1" val="0"/>
+                                    </get-item-text>
+                                </set-val-96-6>
+                                <custom-code comment="false" x="48" y="145">
+                                    <int id="0" val="_TypetoCreate = getActorTypeByName(_ActorName);"/>
+                                </custom-code>
+                                <if comment="false" x="48" y="165">
+                                    <group eventID="-1" id="-1">
+                                        <create-actor3 comment="false" x="59" y="198">
+                                            <get-val-96-8 comment="false" id="0" x="0" y="0"/>
+                                            <get-item-number comment="false" id="1" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-96-7 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="1"/>
+                                            </get-item-number>
+                                            <get-item-number comment="false" id="2" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-96-7 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="2"/>
+                                            </get-item-number>
+                                            <int id="3" val="1"/>
+                                        </create-actor3>
+                                        <setlayer comment="false" x="59" y="245">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <get-item-number comment="false" id="1" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-96-7 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="3"/>
+                                            </get-item-number>
+                                        </setlayer>
+                                    </group>
+                                    <value comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="8"/>
+                                        <int id="1" val="0"/>
+                                    </value>
+                                </if>
+                                <clear comment="false" x="48" y="304">
+                                    <int id="0" val="8"/>
+                                </clear>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <scenename comment="false" id="0" x="0" y="0"/>
+                                <get-item-text comment="false" id="1" x="0" y="0">
+                                    <get-val-96-10 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                </get-item-text>
+                            </eq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-96-10 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+            </group>
+            <int id="0" val="LoadActors"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

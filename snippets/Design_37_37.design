@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="59" y="20">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="56" y="133">
+<group id="-1">
+<if comment="false" x="67" y="158">
+<group id="-1">
+<scene-change3 comment="false" x="78" y="201">
+<get-val-37-3 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+<get-val-37-2 comment="false" id="2" x="0" y="0"/>
+<int id="3" val="1"/>
+<get-val-37-2 comment="false" id="4" x="0" y="0"/>
+</scene-change3>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<isalive comment="false" id="0" x="0" y="0">
+<get-val-37-1 comment="false" id="0" x="0" y="0"/>
+</isalive>
+</not>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<draw comment="false" x="63" y="318">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

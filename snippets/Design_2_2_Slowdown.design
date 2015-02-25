@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<comment-short comment="false" x="26" y="40">
+<int id="0" val="Inputs: ----------------------"/>
+</comment-short>
+<comment-short comment="false" x="26" y="60">
+<int id="0" val="&amp;quot;On Ground?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;On Ground&amp;quot; Behavior"/>
+</comment-short>
+<comment-short comment="false" x="26" y="80">
+<int id="0" val="&amp;quot;Is Ducking?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;Ducking&amp;quot; Behavior"/>
+</comment-short>
+<comment-short comment="false" x="26" y="100">
+<int id="0" val="&amp;quot;Is Slope Sliding?&amp;quot; -- &amp;lt;Boolean&amp;gt; Actor Level Attribute, from &amp;quot;Slope Detection&amp;quot; Behavior"/>
+</comment-short>
+<comment-short comment="false" x="26" y="120">
+<int id="0" val="Outputs: ---------------------"/>
+</comment-short>
+<comment-short comment="false" x="26" y="140">
+<int id="0" val="None"/>
+</comment-short>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="188">
+<group id="-1">
+<if comment="false" x="26" y="213">
+<group id="-1">
+<stop comment="false" x="37" y="251"/>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Slope Sliding?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<if comment="false" x="26" y="283">
+<group id="-1">
+<setdx comment="false" x="37" y="326">
+<ACTOR eid="this" id="0"/>
+<times comment="false" id="1" x="0" y="0">
+<getdx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getdx>
+<get-val-2-5 comment="false" id="1" x="0" y="0"/>
+</times>
+</setdx>
+<stop comment="false" x="37" y="371"/>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Ducking?"/>
+</actor-get-prop>
+</as-boolean>
+<as-boolean comment="false" id="1" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+</and>
+</if>
+<if comment="false" x="26" y="403">
+<group id="-1">
+<if comment="false" x="37" y="456">
+<group id="-1">
+<setdx comment="false" x="48" y="494">
+<ACTOR eid="this" id="0"/>
+<times comment="false" id="1" x="0" y="0">
+<getdx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getdx>
+<get-val-2-3 comment="false" id="1" x="0" y="0"/>
+</times>
+</setdx>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="37" y="551">
+<group id="-1">
+<setdx comment="false" x="48" y="571">
+<ACTOR eid="this" id="0"/>
+<times comment="false" id="1" x="0" y="0">
+<getdx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getdx>
+<get-val-2-4 comment="false" id="1" x="0" y="0"/>
+</times>
+</setdx>
+</group>
+</else>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<and comment="false" id="0" x="0" y="0">
+<not comment="false" id="0" x="0" y="0">
+<keydown2new comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-2-1 comment="false" id="1" x="0" y="0"/>
+</keydown2new>
+</not>
+<not comment="false" id="1" x="0" y="0">
+<keydown2new comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-2-2 comment="false" id="1" x="0" y="0"/>
+</keydown2new>
+</not>
+</and>
+<not comment="false" id="1" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Ducking?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</and>
+</if>
+<else comment="false" x="26" y="640">
+<group id="-1">
+<if comment="false" x="37" y="660">
+<group id="-1">
+<custom-472 comment="false" x="48" y="698">
+<ACTOR eid="this" id="0"/>
+<get-val-2-7 comment="false" id="1" x="0" y="0"/>
+</custom-472>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="37" y="742">
+<group id="-1">
+<setdx comment="false" x="48" y="762">
+<ACTOR eid="this" id="0"/>
+<times comment="false" id="1" x="0" y="0">
+<getdx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getdx>
+<get-val-2-6 comment="false" id="1" x="0" y="0"/>
+</times>
+</setdx>
+</group>
+</else>
+</group>
+</else>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="859">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="932">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

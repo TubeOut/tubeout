@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <custom-120 comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-64-1 comment="false" id="1" x="0" y="0"/>
+                            <ACTOR eid="lastcollided" id="2"/>
+                        </custom-120>
+                    </group>
+                    <collision-top comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-top>
+                </if>
+                <if comment="false" x="26" y="122">
+                    <group eventID="-1" id="-1">
+                        <custom-120 comment="false" x="37" y="155">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-64-2 comment="false" id="1" x="0" y="0"/>
+                            <ACTOR eid="lastcollided" id="2"/>
+                        </custom-120>
+                    </group>
+                    <collision-bottom comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-bottom>
+                </if>
+                <if comment="false" x="26" y="199">
+                    <group eventID="-1" id="-1">
+                        <custom-120 comment="false" x="37" y="232">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-64-3 comment="false" id="1" x="0" y="0"/>
+                            <ACTOR eid="lastcollided" id="2"/>
+                        </custom-120>
+                    </group>
+                    <collision-right comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-right>
+                </if>
+                <if comment="false" x="26" y="276">
+                    <group eventID="-1" id="-1">
+                        <custom-120 comment="false" x="37" y="309">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-64-4 comment="false" id="1" x="0" y="0"/>
+                            <ACTOR eid="lastcollided" id="2"/>
+                        </custom-120>
+                    </group>
+                    <collision-left comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-left>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receiver-1-120 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="75"/>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-byobval-226-493-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="107">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="155"/>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <isalive comment="false" id="0" x="0" y="0">
+                                <get-byobval-226-493-2 comment="false" id="0" x="0" y="0"/>
+                            </isalive>
+                        </not>
+                        <lesseq comment="false" id="1" x="0" y="0">
+                            <custom-488 comment="false" id="0" x="0" y="0">
+                                <get-byobval-226-493-2 comment="false" id="0" x="0" y="0"/>
+                            </custom-488>
+                            <int id="1" val="0"/>
+                        </lesseq>
+                    </or>
+                </if>
+                <if comment="false" x="26" y="187">
+                    <group eventID="-1" id="-1">
+                        <custom-486 comment="false" x="37" y="217">
+                            <get-byobval-226-493-2 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-226-493-1 comment="false" id="1" x="0" y="0"/>
+                        </custom-486>
+                        <stop comment="false" x="37" y="249"/>
+                    </group>
+                    <is-empty comment="false" id="0" x="0" y="0">
+                        <get-val-64-5 comment="false" id="0" x="0" y="0"/>
+                    </is-empty>
+                </if>
+                <comment-short comment="false" x="26" y="281">
+                    <int id="0" val="Make sure our target is in an Actor Group we want to damage."/>
+                </comment-short>
+                <if comment="false" x="26" y="301">
+                    <group eventID="-1" id="-1">
+                        <custom-486 comment="false" x="37" y="344">
+                            <get-byobval-226-493-2 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-226-493-1 comment="false" id="1" x="0" y="0"/>
+                        </custom-486>
+                    </group>
+                    <contains-item comment="false" id="0" x="0" y="0">
+                        <get-val-64-5 comment="false" id="0" x="0" y="0"/>
+                        <getgroup comment="false" id="1" x="0" y="0">
+                            <get-byobval-226-493-2 comment="false" id="0" x="0" y="0"/>
+                        </getgroup>
+                    </contains-item>
+                </if>
+            </group>
+            <int id="0" val=""/>
+            <get-byobval-226-493-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-226-493-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-1-120>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
