@@ -1,6 +1,9 @@
 # TubeOut
-----------
 **TubeOut** is a simple open-source Platform game made with Stencyl. 
+
+## How to play
+* [Play in the browser](https://tubeout.github.io)
+* Ubuntu package (coming soon)
 
 ## How to contribute
 1. Download Stencyl (http://www.stencyl.com/);
