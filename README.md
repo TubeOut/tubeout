@@ -3,7 +3,7 @@
 
 ## How to play
 * [Play in the browser](https://tubeout.github.io)
-* Ubuntu package (coming soon)
+* [Ubuntu package](https://launchpad.net/~tubeout-dev/+archive/ubuntu/tubeout)
 
 ## How to contribute
 1. Download Stencyl (http://www.stencyl.com/);
